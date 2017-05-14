@@ -39,5 +39,3 @@ def webhook():
     else:
         flask.abort(403)
 
-
-
