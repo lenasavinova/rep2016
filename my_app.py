@@ -20,7 +20,7 @@ def send_welcome(message):
 @bot.message_handler(func=lambda m: True)
 def count_words(message):
     mes = message.text
-    mes = re.sub('[,.!?;:#%^)(*]', ' ', mes)
+    mes = re.sub('[,.!?;:"/\#%^)(*]', ' ', mes)
     reply = len(mes.split())
     bot.send_message(message.chat.id, 'Количество слов в твоём сообщении: ' + str(reply))
     
