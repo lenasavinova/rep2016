@@ -1,3 +1,4 @@
+#@random_answer_sobesednik_bot - адрес бота
 import flask
 import telebot
 import conf
